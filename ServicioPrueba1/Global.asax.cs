@@ -8,7 +8,7 @@ namespace ServicioPrueba1
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
             // Agregar los encabezados para permitir solicitudes desde tu frontend
-            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "http://192.168.15.188:3001"); 
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "http://192.168.15.188:3010"); 
 
             // Si la solicitud es un preflight (OPTIONS), respondemos con los encabezados necesarios
             if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
